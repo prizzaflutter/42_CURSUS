@@ -17,6 +17,7 @@
 		"libft.h": "c",
 		"stdio.h": "c",
 		"__locale": "c",
-		"__string": "c"
+		"__string": "c",
+		"__node_handle": "c"
 	}
 }
