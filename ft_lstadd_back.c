@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 11:26:37 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/02 17:11:17 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/06 11:25:40 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*ptr;
 
-	if (*lst == NULL && new == NULL)
+	if ((!lst && *lst == NULL) || new == NULL)
 		return ;
 	if (*lst == NULL)
 	{
