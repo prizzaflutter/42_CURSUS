@@ -6,32 +6,12 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 10:38:48 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/05 10:46:54 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 20:36:25 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
- * @brief Converts a string to an integer.
- * 
- * This function parses a C-string (const char *str) to convert its numeric
- * content into an integer. It handles optional leading whitespace,
- * an optional '+' or '-' sign to indicate the sign of the result, and
- * sequences of numeric digits (0-9).
- * 
- * @param str Pointer to the C-string to be converted.
- * 
- * @return The integer value represented by the characters in str. 
- * Returns 0 if there are no numeric characters or if conversion is unsuccessful.
- * exemeple : "  ++2423string"    resules : 0;
- * exemeple : "  +2423string"    resules : 2423;
- * exemeple : "  -2423string"    resules : -2423;
- * exemeple : "  string"    resules : 0;
- * exemeple : NULL    resules : segmentation fault;
- * 
- * @note Assumes that the input string contains only valid characters.
- */
 int	ft_atoi(const	char *str)
 {
 	int	num;
