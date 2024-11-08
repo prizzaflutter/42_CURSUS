@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:40:59 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/05 12:36:24 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 19:48:08 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (s == NULL || fd < 0)
+		return ;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

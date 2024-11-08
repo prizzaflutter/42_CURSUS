@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:46:08 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/08 19:41:06 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 20:27:14 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (s == NULL || fd < 0)
+		return ;
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }

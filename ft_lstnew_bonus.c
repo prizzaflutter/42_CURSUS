@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 10:42:41 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/08 19:40:40 by iaskour          ###   ########.fr       */
+/*   Created: 2024/11/01 11:06:33 by iaskour           #+#    #+#             */
+/*   Updated: 2024/11/08 20:23:22 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+t_list	*ft_lstnew(void	*content)
 {
-	int	counter;
+	t_list	*head;
 
-	counter = 0;
-	if (lst == NULL)
-		return (counter);
-	while (lst->next != NULL)
-	{
-		counter++;
-		lst = lst->next;
-	}
-	counter++;
-	return (counter);
+	head = malloc(sizeof(struct s_list));
+	if (head == NULL)
+		return (NULL);
+	head -> content = content;
+	head ->next = NULL;
+	return (head);
 }

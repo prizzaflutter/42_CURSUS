@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 18:56:46 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/08 19:42:08 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 20:07:47 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	if (s1 == NULL)
-		lenght = ft_strlen(s2);
-	else if (s2 == NULL)
-		lenght = ft_strlen(s1);
-	else
-		lenght = (ft_strlen(s1) + ft_strlen(s2));
+	lenght = (ft_strlen(s1) + ft_strlen(s2));
 	str = (char *)malloc((lenght + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
