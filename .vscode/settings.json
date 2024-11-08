@@ -18,6 +18,7 @@
 		"stdio.h": "c",
 		"__locale": "c",
 		"__string": "c",
-		"__node_handle": "c"
+		"__node_handle": "c",
+		"stdlib.h": "c"
 	}
 }

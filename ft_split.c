@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:46:30 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/04 17:54:19 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/05 12:36:44 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ static char	*fill_index(char *final_str, const char *start, size_t lenght)
 	return (final_str);
 }
 
-char	**fill_final_str(char **final_str, const char *s, char c)
+static char	**fill_final_str(char **final_str, const char *s, char c)
 {
 	const char	*start;
 	int			i;
