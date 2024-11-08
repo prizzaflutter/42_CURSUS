@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:09:34 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/08 19:42:49 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 21:04:36 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char			*substr;
 	size_t			i;
 
+	if (s == NULL)
+		return (NULL);
 	size = (unsigned int) ft_strlen(s);
 	lenght = (unsigned int) len;
 	if (start > size || size == 0)

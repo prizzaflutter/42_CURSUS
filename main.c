@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include "libft.h"
 #include <string.h>
-
+#include <stdlib.h>
 int main ()
 {
 	// t_list  *head = malloc(sizeof(t_list));
@@ -27,9 +27,13 @@ int main ()
 	// printf("%p\n", str1->next);
 	// printf("%p\n", head);
 
-	char *src = "askour";
-	char *dst = malloc(10);
+	// char *src = "askour";
+	// char *dst = malloc(10);
 
-	printf("%zu\n", ft_strlcpy(dst, src, 100));
+	// printf("%zu\n", ft_strlcpy(dst, src, 100));
+
+    // ft_calloc(0, 0);
+
+	printf("%s\n", ft_substr(NULL, 9, 0));
 
 }

@@ -6,7 +6,7 @@
 /*   By: iaskour <iaskour@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 10:00:14 by iaskour           #+#    #+#             */
-/*   Updated: 2024/11/08 19:42:24 by iaskour          ###   ########.fr       */
+/*   Updated: 2024/11/08 20:51:45 by iaskour          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*new_str;
 
 	i = 0;
+	if (s == NULL || f == NULL)
+		return (NULL);
 	new_str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!new_str)
 		return (NULL);
