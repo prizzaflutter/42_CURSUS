@@ -19,6 +19,8 @@
 		"__locale": "c",
 		"__string": "c",
 		"__node_handle": "c",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"fcntl.h": "c",
+		"algorithm": "c"
 	}
 }
